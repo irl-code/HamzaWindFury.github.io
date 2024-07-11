@@ -1,2 +1,74 @@
-Hello world
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexas Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Hexas Technologies</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to Hexas Technologies</h1>
+        <p>Leading the way in innovative technology solutions.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>Creating modern and responsive websites.</p>
+        </div>
+        <div class="service">
+            <h3>Mobile Development</h3>
+            <p>Building user-friendly mobile applications.</p>
+        </div>
+        <div class="service">
+            <h3>Cloud Solutions</h3>
+            <p>Offering scalable cloud computing services.</p>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a tech company dedicated to delivering top-notch technology solutions to our clients. Our team of experts is committed to innovation and excellence.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <section id="book">
+        <h2>Book a Consultation</h2>
+        <form id="book-form">
+            <label for="book-name">Name:</label>
+            <input type="text" id="book-name" name="book-name" required>
+            <label for="book-email">Email:</label>
+            <input type="email" id="book-email" name="book-email" required>
+            <label for="book-date">Preferred Date:</label>
+            <input type="date" id="book-date" name="book-date" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Hexas Technologies. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
