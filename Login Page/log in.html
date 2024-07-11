@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Hexas Technologies</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Booking | Hexas Technologies</title>
+    <link rel="stylesheet" href="booking.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 </head>
 <body>
     <div class="container">
-        <div class="login-wrapper">
-            <div class="login-box">
-                <h2>Login</h2>
-                <form id="loginForm">
+        <div class="booking-wrapper">
+            <div class="booking-box">
+                <h2>Book a Service</h2>
+                <form id="bookingForm">
                     <div class="user-box">
-                        <input type="text" name="username" required>
-                        <label>Username</label>
+                        <input type="text" name="name" required>
+                        <label>Name</label>
                     </div>
                     <div class="user-box">
-                        <input type="password" name="password" required>
-                        <label>Password</label>
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="tel" name="phone" required>
+                        <label>Phone</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="date" name="date" required>
+                        <label>Date</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="time" name="time" required>
+                        <label>Time</label>
                     </div>
                     <button type="submit">Submit</button>
                 </form>
