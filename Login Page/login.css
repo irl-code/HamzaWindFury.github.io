@@ -25,6 +25,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--cultured);
 }
 
 .container {
@@ -33,6 +34,8 @@ body, html {
     align-items: center;
     height: 100%;
     width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .login-wrapper {
@@ -45,18 +48,24 @@ body, html {
 
 .login-box {
     background: var(--background-color);
-    padding: 80px;
-    border-radius: 10px;
+    padding: 60px;
+    border-radius: 15px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 100%;
     max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-box:hover {
+    transform: translateY(-10px);
 }
 
 .login-box h2 {
     color: var(--white);
     margin-bottom: 40px;
     font-weight: 600;
+    font-size: 2rem;
 }
 
 .user-box {
@@ -75,6 +84,11 @@ body, html {
     outline: none;
     background: transparent;
     font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.user-box input:focus {
+    border-bottom: 1px solid var(--violet-blue-crayola);
 }
 
 .user-box label {
@@ -92,7 +106,7 @@ body, html {
 .user-box input:valid ~ label {
     top: -20px;
     left: 0;
-    color: var(--blue-crayola);
+    color: var(--violet-blue-crayola);
     font-size: 14px;
 }
 
@@ -112,15 +126,16 @@ button {
 button:hover {
     background-color: var(--white);
     color: var(--blue-crayola);
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
     .login-box {
-        padding: 60px;
+        padding: 40px;
     }
 
     .user-box {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .user-box input {
@@ -133,5 +148,32 @@ button:hover {
 
     button {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px;
+    }
+
+    .user-box {
+        margin-bottom: 20px;
+    }
+
+    .user-box input {
+        font-size: 14px;
+    }
+
+    .user-box label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .login-box h2 {
+        font-size: 1.5rem;
     }
 }
