@@ -1,0 +1,137 @@
+:root {
+    --violet-blue-crayola: hsla(234, 50%, 64%, 1);
+    --dark-cornflower-blue_a7: hsla(214, 88%, 27%, 0.07);
+    --white: hsla(0, 0%, 100%, 1);
+    --white_a3: hsla(0, 0%, 100%, 0.03);
+    --white_a8: hsla(0, 0%, 100%, 0.08);
+    --white_a12: hsla(0, 0%, 100%, 0.12);
+    --white_a70: hsla(0, 0%, 100%, 0.7);
+    --cultured: hsla(220, 20%, 97%, 1);
+    --lavender-web: hsla(233, 52%, 94%, 1);
+    --cadet-blue-crayola: hsla(220, 12%, 70%, 1);
+    --cadet-blue-crayola_a20: hsla(222, 23%, 71%, 0.2);
+    --charcoal: hsla(218, 22%, 26%, 1);
+    --raisin-black: hsla(216, 14%, 14%, 1);
+    --light-gray: hsla(0, 0%, 79%, 1);
+    --blue-crayola: hsla(219, 72%, 56%, 1);
+    --black-coral: hsla(220, 12%, 43%, 1);
+    --background-color: #2e2a6e; /* Color from the provided image */
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.login-box {
+    background: var(--background-color);
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.login-box h2 {
+    color: var(--white);
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--blue-crayola);
+    outline: none;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--blue-crayola);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--blue-crayola);
+    font-size: 14px;
+}
+
+button {
+    background: var(--blue-crayola);
+    border: none;
+    padding: 15px 30px;
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--blue-crayola);
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        padding: 60px;
+    }
+
+    .user-box {
+        margin-bottom: 40px;
+    }
+
+    .user-box input {
+        font-size: 16px;
+    }
+
+    .user-box label {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+}
